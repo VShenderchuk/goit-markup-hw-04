@@ -265,13 +265,11 @@
          padding-bottom: 30px;
          display: flex;
          justify-content: center;
-         
      }
-     .teammembers-icon {
-        width: 44px;
-        height: 44px;
-    
 
+     .teammembers-icon {
+         width: 44px;
+         height: 44px;
      }
 
      .site-teammembers-list {
@@ -340,6 +338,7 @@
          font-weight: 700;
          font-size: 14px;
          line-height: 1.14;
+         padding-bottom: 20px;
      }
 
      /* Button*/
@@ -481,10 +480,28 @@
 
      .clients-item {
          margin-right: 30px;
+         display: flex;
+         align-items: center;
      }
 
      .clients-item:last-child {
          margin-right: 0px;
+     }
+
+     .clients-links {
+         display: flex;
+         border: 1px solid #AFB1B8;
+         box-sizing: border-box;
+         border-radius: 4px;
+         justify-content: center;
+         align-items: center;
+         width: 170px;
+         height: 90px;
+     }
+
+     .clients-image {
+         width: 170px;
+         height: 90px;
      }
 
      /*Footer styles*/
@@ -510,6 +527,8 @@
          margin-top: 0;
      }
 
+     .footer-button {}
+
      .address-item {
          display: flex;
          flex-direction: column;
@@ -523,6 +542,7 @@
          flex-direction: column;
          padding-right: 94px;
          width: 206px;
+         align-items: flex-start;
      }
 
      .social-list {
@@ -533,6 +553,15 @@
 
      .social-item {
          text-align: center;
+     }
+
+     .social-icon {
+         width: 40px;
+         height: 40px;
+     }
+
+     .social-item:not(:last-child) {
+         margin-right: 10px;
      }
 
      .address {
