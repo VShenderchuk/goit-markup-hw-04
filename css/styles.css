@@ -22,6 +22,7 @@
          font-size: 14px;
          line-height: 1.71;
          letter-spacing: 0.02em;
+         margin: 0;
      }
 
      .logo {
@@ -34,6 +35,10 @@
      }
 
      .link {
+         text-decoration: none;
+     }
+
+     .section.link {
          text-decoration: none;
      }
 
@@ -53,6 +58,11 @@
          list-style: none;
          padding: 0;
          margin: 0;
+     }
+
+     .section {
+         padding-top: 94px;
+         padding-bottom: 94px;
      }
 
      /* Navigation styles*/
@@ -75,6 +85,18 @@
          margin-left: 85px;
      }
 
+     .site-nav-mail-icon {
+         width: 16px;
+         height: 11.2px;
+         padding-right: 10px;
+     }
+
+     .site-nav-smartphone-icon {
+         width: 10px;
+         height: 14.9px;
+         padding-right: 10px;
+     }
+
      .site-nav-item {
          margin-right: 50px;
          padding-top: 34px;
@@ -86,7 +108,6 @@
      }
 
      .site-nav-main-address {
-         display: flex;
          margin-left: auto;
      }
 
@@ -128,8 +149,6 @@
          margin-bottom: 0;
      }
 
-     /* Class for all web links (blue-black)*/
-
      .links:link, .links:visited {
          color: var(--title-text-color);
      }
@@ -141,6 +160,8 @@
      .links {
          text-decoration: none;
      }
+
+     /* Class for all web links (blue-black)*/
 
      .mail {
          color: var(--accent-color);
@@ -156,6 +177,8 @@
          line-height: 1.14;
      }
 
+     /*Hero syyles*/
+
      .hero {
          align-items: center;
          text-align: center;
@@ -166,8 +189,15 @@
          background-color: #757575;
      }
 
-     .section.link {
-         text-decoration: none;
+     .overlay {
+         max-width: 1600px;
+         height: 600px;
+         margin-left: auto;
+         margin-right: auto;
+         background-image: linear-gradient(to right, rgba(47, 48, 58, 08), rgba(47, 48, 58, 0.8)), url("../images/Headerimg.jpg");
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
      }
 
      .hero-title {
@@ -334,15 +364,10 @@
          line-height: 1.87;
      }
 
-     .section {
-         padding-top: 94px;
-         padding-bottom: 94px;
-     }
-
      /*Features styles*/
 
      .features {
-         background-color: var(--features-area-color);
+         background-color: var(--additional-color);
      }
 
      .features-list {
@@ -354,6 +379,11 @@
          width: 270px;
          align-items: center;
          margin-right: 30px;
+     }
+
+     .features-icon {
+         width: 70px;
+         height: 70px;
      }
 
      .features-item:last-child {
@@ -372,6 +402,7 @@
          padding-left: 100px;
          padding-right: 100px;
          background-color: var(--features-area-color);
+         border-radius: 4px;
      }
 
      .site-description-logo-title {
