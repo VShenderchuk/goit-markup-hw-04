@@ -13,6 +13,7 @@
          --additional-color: #ffffff;
          --footer-color: #2F303A;
          --features-area-color: #F5F4FA;
+         --teammembers-icon-color: #AFB1B8;
      }
 
      .body {
@@ -89,12 +90,19 @@
          width: 16px;
          height: 11.2px;
          padding-right: 10px;
+         fill: var(--primary-text-color);
      }
-
+.site-nav-mail-icon:hover {
+    fill: var(--accent-color);
+}
      .site-nav-smartphone-icon {
          width: 10px;
          height: 14.9px;
          padding-right: 10px;
+         fill: var(--primary-text-color);
+     }
+     .site-nav-smartphone-icon:hover {
+         fill: var(--accent-color);
      }
 
      .site-nav-item {
@@ -266,10 +274,25 @@
          display: flex;
          justify-content: center;
      }
-
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.icon:hover {
+    background-color:var(--accent-color)
+}
      .teammembers-icon {
-         width: 44px;
-         height: 44px;
+         width: 20px;
+         height: 20px;
+         fill:var(--teammembers-icon-color)
+     }
+     .teammembers-icon:hover {
+         fill:var(--additional-color);
      }
 
      .site-teammembers-list {
@@ -503,7 +526,12 @@
          width: 170px;
          height: 90px;
      }
-
+.clients-icon {
+    fill: var(--primary-text-color)
+}
+.clients-icon:hover {
+    fill: var(--accent-color);
+}
      /*Footer styles*/
 
      .footer-section {
@@ -527,7 +555,26 @@
          margin-top: 0;
      }
 
-     .footer-button {}
+     .footer-button {
+         display: flex;
+         justify-content: space-between;
+       
+     }
+.footer-button-item {
+    margin: 0;
+    padding: 0;
+}
+     .footer-text {
+         display: block;
+         width: 219px;
+         color: var(--additional-color);
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 1.14;
+         padding-bottom: 20px;
+         letter-spacing: 0.03em;
+         text-transform: uppercase;
+     }
 
      .address-item {
          display: flex;
@@ -576,6 +623,24 @@
          font-weight: 700;
          font-size: 22px;
          line-height: 1.18;
+     }
+
+     .footer-button-item {
+         display: inline-block;
+         font-family: inherist;
+         color: var(--additional-color);
+         background-color: var(--accent-color);
+         font-family: Roboto, sans-serif;
+         font-size: 16px;
+         line-height: 1.87;
+         align-items: center;
+        text-align: right;
+         letter-spacing: 0.06em;
+         min-width: 200px;
+         height: 50px;
+         border-radius: 4px;
+         border: 1px solid transparent;
+         padding: 10px 30px;
      }
 
      .footer-logo {
