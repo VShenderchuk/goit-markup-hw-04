@@ -13,7 +13,7 @@
          --additional-color: #ffffff;
          --footer-color: #2F303A;
          --features-area-color: #F5F4FA;
-         --teammembers-icon-color: #AFB1B8;
+         --icon-color: #AFB1B8;
      }
 
      .body {
@@ -92,15 +92,18 @@
          padding-right: 10px;
          fill: var(--primary-text-color);
      }
-.site-nav-mail-icon:hover {
-    fill: var(--accent-color);
-}
+
+     .site-nav-mail-icon:hover {
+         fill: var(--accent-color);
+     }
+
      .site-nav-smartphone-icon {
          width: 10px;
          height: 14.9px;
          padding-right: 10px;
          fill: var(--primary-text-color);
      }
+
      .site-nav-smartphone-icon:hover {
          fill: var(--accent-color);
      }
@@ -274,25 +277,29 @@
          display: flex;
          justify-content: center;
      }
-.icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-}
-.icon:hover {
-    background-color:var(--accent-color)
-}
+
+     .icon {
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         background-color: rgba(255, 255, 255, 0.1);
+         border-radius: 50%;
+         width: 44px;
+         height: 44px;
+     }
+
+     .icon:hover {
+         background-color: var(--accent-color)
+     }
+
      .teammembers-icon {
          width: 20px;
          height: 20px;
-         fill:var(--teammembers-icon-color)
+         fill: var(--icon-color)
      }
+
      .teammembers-icon:hover {
-         fill:var(--additional-color);
+         fill: var(--additional-color);
      }
 
      .site-teammembers-list {
@@ -307,6 +314,9 @@
 
      .teammembers-item {
          background-color: var(--additional-color);
+         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+         border-radius: 0px 0px 4px 4px;
+         border: var(--primary-text-color);
      }
 
      .teammembers {
@@ -371,8 +381,8 @@
      }
 
      .main-button {
-         color: var(--primary-white-color);
-         background-color: var(--accent-color);
+         color: var(--title-text-color);
+         background-color: var(--features-area-color);
          border-radius: 4px;
          padding-left: 22px;
          padding-right: 22px;
@@ -381,6 +391,11 @@
          align-items: center;
          border: none;
          outline: none;
+     }
+
+     .main-button:hover {
+         background-color: var(--accent-color);
+         color: var(--additional-color);
      }
 
      .button-element {
@@ -521,19 +536,24 @@
          width: 170px;
          height: 90px;
      }
-.clients-links:hover {
-    border-color: var(--accent-color);
-}
+
+     .clients-links:hover {
+         border-color: var(--accent-color);
+     }
+
      .clients-image {
          width: 170px;
          height: 90px;
      }
-.clients-icon {
-    fill: var(--primary-text-color)
-}
-.clients-icon:hover {
-    fill: var(--accent-color);
-}
+
+     .clients-icon {
+         fill: var(--icon-color)
+     }
+
+     .clients-icon:hover {
+         fill: var(--accent-color);
+     }
+
      /*Footer styles*/
 
      .footer-section {
@@ -560,12 +580,13 @@
      .footer-button {
          display: flex;
          justify-content: space-between;
-       
      }
-.footer-button-item {
-    margin: 0;
-    padding: 0;
-}
+
+     .footer-button-item {
+         margin: 0;
+         padding: 0;
+     }
+
      .footer-text {
          display: block;
          width: 219px;
@@ -596,8 +617,7 @@
 
      .social-list {
          display: flex;
-       
-        align-items: center;
+         align-items: center;
      }
 
      .social-item {
@@ -637,7 +657,7 @@
          font-size: 16px;
          line-height: 1.87;
          align-items: center;
-        text-align: right;
+         text-align: right;
          letter-spacing: 0.06em;
          min-width: 200px;
          height: 50px;
@@ -651,23 +671,26 @@
          margin-bottom: 0;
          padding-bottom: 20px;
      }
-.icon-footer {
-    color: var(--primeri-white-color);
-    display: inline-flex;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    justify-content: center;
-    align-items: center;
-}
-.icon-footer:hover {
-    background-color: var(--accent-color);
-    
-}
-.icon-footer.social-icon {
-    fill: var(--additional-color);
-}
+
+     .icon-footer {
+         color: var(--primeri-white-color);
+         display: inline-flex;
+         background-color: rgba(255, 255, 255, 0.1);
+         border-radius: 50%;
+         width: 44px;
+         height: 44px;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .icon-footer:hover {
+         background-color: var(--accent-color);
+     }
+
+     .icon-footer.social-icon {
+         fill: var(--additional-color);
+     }
+
      /*Portfolio styles*/
 
      .main-portfoliocontainer {
@@ -755,4 +778,8 @@
 
      .card-image {
          display: block;
+     }
+
+     .portfolio-link {
+         text-decoration: none;
      }
