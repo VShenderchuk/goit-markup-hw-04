@@ -88,25 +88,12 @@
 
      .site-nav-mail-icon {
          width: 16px;
-         height: 11.2px;
+         height: 11px;
          padding-right: 10px;
-         fill: var(--primary-text-color);
+         fill: currentColor;
      }
 
-     .site-nav-mail-icon:hover {
-         fill: var(--accent-color);
-     }
-
-     .site-nav-smartphone-icon {
-         width: 10px;
-         height: 14.9px;
-         padding-right: 10px;
-         fill: var(--primary-text-color);
-     }
-
-     .site-nav-smartphone-icon:hover {
-         fill: var(--accent-color);
-     }
+    
 
      .site-nav-item {
          margin-right: 50px;
@@ -126,6 +113,8 @@
          display: flex;
          margin-left: auto;
          font-style: normal;
+         align-items: center;
+         justify-content: center;
      }
 
      .site-nav-address .site-nav-address-item+.site-nav-address-item {
@@ -133,7 +122,6 @@
      }
 
      .site-nav-address-item {
-         margin-right: 30px;
          font-style: normal;
      }
 
@@ -172,21 +160,39 @@
          text-decoration: none;
      }
 
-     /* Class for all web links (blue-black)*/
+     .mail-links {
+         display: flex;
+         align-items: center;
+         color: var(--primary-text-color);
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 1.14;
+         text-decoration: none;
+     }
 
-     .mail {
+     .mail-links:hover {
          color: var(--accent-color);
-         font-weight: 500;
-         font-size: 14px;
-         line-height: 1.14;
      }
 
-     .telnumber {
-         color: var(--title-text-color);
+     .telnumber-links {
+         display: flex;
+         align-items: center;
+         color: var(--primary-text-color);
          font-weight: 500;
          font-size: 14px;
          line-height: 1.14;
+         text-decoration: none;
      }
+     
+     .telnumber-links:hover {
+         color: var(--accent-color);
+     }
+     .site-nav-smartphone-icon {
+        width: 10px;
+        height: 15px;
+        padding-right: 10px;
+        fill: currentColor;
+    }
 
      /*Hero syyles*/
 
@@ -205,7 +211,7 @@
          height: 600px;
          margin-left: auto;
          margin-right: auto;
-         background-image: linear-gradient(to right, rgba(47, 48, 58, 08), rgba(47, 48, 58, 0.8)), url("../images/Headerimg.jpg");
+         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/Headerimg.jpg");
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
@@ -272,6 +278,18 @@
          justify-content: space-between;
      }
 
+     .teammembers-links {
+         margin-right: 10px;
+         background-color: var(--additional-color);
+         color: var(--icon-color);
+     }
+
+     
+
+     .teammembers-links:last-child {
+         margin-right: 0px;
+     }
+
      .teammembers-photo {
          padding-bottom: 30px;
          display: flex;
@@ -289,17 +307,14 @@
      }
 
      .icon:hover {
-         background-color: var(--accent-color)
+         background-color: var(--accent-color);
+         color: var(--additional-color);
      }
 
      .teammembers-icon {
          width: 20px;
          height: 20px;
-         fill: var(--icon-color)
-     }
-
-     .teammembers-icon:hover {
-         fill: var(--additional-color);
+         fill: currentColor;
      }
 
      .site-teammembers-list {
@@ -310,6 +325,9 @@
      .social-links {
          display: flex;
          justify-content: space-evenly;
+         padding-bottom: 24px;
+         padding-right: 32px;
+         padding-left: 32px;
      }
 
      .teammembers-item {
@@ -487,11 +505,18 @@
      }
 
      .prodaction-item {
+         display: block;
+         border-radius: 4px;
          margin-right: 30px;
+         overflow: hidden;
      }
 
      .prodaction-item:last-child {
          margin-right: 0px;
+     }
+
+     .prodaction-image {
+         display: block;
      }
 
      .prodaction-title {
@@ -503,7 +528,6 @@
          text-align: center;
          text-transform: uppercase;
          background-color: var(--primary-text-color);
-         border-radius: 0px 0px 4px 4px;
          height: 70px;
          margin-top: 0px;
          margin-bottom: 0px;
@@ -535,10 +559,12 @@
          align-items: center;
          width: 170px;
          height: 90px;
+         fill: var(--icon-color);
      }
 
      .clients-links:hover {
          border-color: var(--accent-color);
+         fill: var(--accent-color);
      }
 
      .clients-image {
@@ -547,12 +573,10 @@
      }
 
      .clients-icon {
-         fill: var(--icon-color)
+         fill: currentColor
      }
 
-     .clients-icon:hover {
-         fill: var(--accent-color);
-     }
+  
 
      /*Footer styles*/
 
